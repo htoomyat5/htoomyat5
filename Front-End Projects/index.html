@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Meeting</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            background-color: rgb(139, 139, 255);
+            height: 350px;
+        }
+        .sec{
+            background-color: white;
+        }
+        .sec h1{
+            margin-top: -90px;
+            margin-bottom: 20px;
+            color: rgb(139, 139, 255);
+        }
+        h1{
+            padding-top: 70px;
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            font-size: 60px;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px 300px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        table{
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 80%;
+            border: 2px solid rgb(139, 139, 255);
+            background-color: white;
+        }
+        th, td{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 19px;
+            border: 2px solid rgb(139, 139, 255);
+            padding: 8px;
+            text-align: center;
+        }
+        form{
+            margin-left: 160px;
+            padding: 50px;
+            width: 80%;
+            text-align: center;
+        }
+        #name, #email{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            width: 40%;
+            padding: 8px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid rgb(139, 139, 255);
+        }
+        #purpose{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            resize: none;
+            border: 2px solid rgb(139, 139, 255);
+        }
+        label{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            margin: 10px 0;
+            display: inline-block;
+            text-align: left;
+        }
+        input[type=submit]{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            background-color: rgb(139, 139, 255);
+            color: white;
+            padding: 12px 8px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            border: 2px solid rgb(139, 139, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- Schedule time, Speaker Information, Registration Form -->
+     <div class="header"><h1>Our Creation to the Future!</h1>
+     <p>This event is about discussing how technology will be dramatically increasing in the future, what fields are required to approach, and get knowledge for absolute beginners. In this event, many expert developers and engineers will participate for sharing experience. Below is the time schedule to celebrate and please fill the registeration form to be a selected member to join this event. Have a nice progress!</p></div>
+     <table>
+        <tr>
+            <th>No</th>
+            <th>Description</th>
+            <th>Time</th>
+            <th>Speaker</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Foundation of AI</td>
+            <td>9:00 - 10:30</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ML, DL and Neural Network</td>
+            <td>10:30 - 12:00</td>
+            <td>Mikel Smith</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Break</td>
+            <td>12:00 - 1:30</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Related Major Fields of AI</td>
+            <td>1:30 - 3:00</td>
+            <td>Lucifer Yin</td>
+        </tr>
+     </table>
+     <form>
+        <div class="header sec"><h1>Registration Form</h1>
+        <input type="text" id="name" name="name" placeholder="Full Name"><br>
+        <input type="email" id="email" name="email" placeholder="Email Address"><br>
+        <label for="purpose">Why would you like to join this meeting?</label><br>
+        <textarea id="purpose" name="purpose" rows="6" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+     </form>
+     
+</body>
+</html>
